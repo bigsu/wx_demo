@@ -14,7 +14,7 @@ Page({
   },
   onShow: function () {
     var that = this;
-    var myAmapFun = new amapFile.AMapWX({ key: '0e2dedd5b2f58f482f29f950a25b34b3' });
+    var myAmapFun = new amapFile.AMapWX({ key: getApp().data.amapKey });
     //获取高德定位信息
     myAmapFun.getRegeo({
       success: function (data) {
@@ -47,9 +47,8 @@ Page({
   //获取和风天气接口信息
   getWeatherInfo: function (location) {
     var that = this;
-    var key = 'f10b214698504bc488893244fa1e6083';//你自己的key
     //需要在微信公众号的设置-开发设置中配置服务器域名
-    var url = 'https://free-api.heweather.com/s6/weather?key=' + key + '&location=' + location;
+    var url = 'https://free-api.heweather.com/s6/weather?key=' + getApp().data.heweatherKey + '&location=' + location;
     wx.request({
       url: url,
       data: {},
