@@ -2,17 +2,17 @@ const openIdUrl = require('./config').openIdUrl
 
 App({
   data: {
-    amapKey: '请在此处配置',//高德key  api：http://lbs.amap.com/api/wx/guide/get-data/regeo
-    heweatherKey: '请在此处配置',//和风天气key  api：http://www.heweather.com/documents/api/s6/weather
+    amapKey: '0e2dedd5b2f58f482f29f950a25b34b3',//高德key  api：http://lbs.amap.com/api/wx/guide/get-data/regeo
+    heweatherKey: 'f10b214698504bc488893244fa1e6083',//和风天气key  api：http://www.heweather.com/documents/api/s6/weather
   },
   onLaunch: function () {
     console.log('App Launch')
   },
   onShow: function () {
-    console.log('App Show')
+    //console.log('App Show')
   },
   onHide: function () {
-    console.log('App Hide')
+    //console.log('App Hide')
   },
   globalData: {
     hasLogin: false,
