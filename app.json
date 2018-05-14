@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "page/weather/index",
+    "page/scan-code/index",
+    "page/calendar/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "page/weather/index",
+      "iconPath": "image/bar_a1.png",
+      "selectedIconPath": "image/bar_a2.png",
+      "text": "天气"
+    },
+    {
+      "pagePath": "page/calendar/index",
+      "iconPath": "image/bar_c1.png",
+      "selectedIconPath": "image/bar_c2.png",
+      "text": "日历"
+    }, {
+      "pagePath": "page/scan-code/index",
+      "iconPath": "image/bar_b1.png",
+      "selectedIconPath": "image/bar_b2.png",
+      "text": "扫码"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

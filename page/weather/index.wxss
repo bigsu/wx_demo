@@ -1,0 +1,80 @@
+/**index.wxss**/
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: absolute; /*绝对定位*/
+  top: 0;
+  left: 0;
+  padding: 30rpx;
+}
+
+.curWeather {
+  height: 650rpx;
+  display: flex;
+  flex-direction: column; /*纵向*/
+}
+.street {
+  font-size: 1.4em;
+}
+.type{
+  font-size: 1.4em;
+  margin-top: 200rpx;
+}
+.show{
+  display: flex;
+  flex-direction: row;
+}
+.bg {
+  height: 100vh;
+  width: 100%;
+}
+
+.curTemperature {
+  color: #fff;
+  font-size: 0.8em;
+  flex-grow: 1; /*表示将剩余的空间分配给它*/
+}
+
+.tmp {
+  font-size: 8em;
+}
+
+.curExtern {
+  display: flex;
+  flex-direction: row; /*横向*/
+  justify-content: space-around;
+  color: white;
+}
+
+.val {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* .line {
+  border: 0.9rpx solid #ff0;
+} */
+
+.typeImg {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+
+.castItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-bottom: 1rpx solid #0ff;    */
+  padding: 10rpx 0;
+}
+
+.forecast {
+  color: #345067;
+  /*background: #aaa;*/
+  margin-top: 170rpx;
+  font-size:1.2em;
+}
+
