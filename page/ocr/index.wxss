@@ -1,0 +1,2 @@
+/* page/ocr/index.wxss */
+@import "../common/lib/weui.wxss";

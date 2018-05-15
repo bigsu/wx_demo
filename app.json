@@ -3,7 +3,9 @@
     "page/weather/index",
     "page/navigate/index",
     "page/calendar/index",
-    "page/scan-code/index"
+    "page/scan-code/index",
+    "page/ocr/index",
+    "page/demo/demo"
   ],
   "window": {
     "navigationBarTextStyle": "black",

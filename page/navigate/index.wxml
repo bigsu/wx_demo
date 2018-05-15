@@ -4,8 +4,13 @@
     <view class="navigator-arrow"></view>
   </navigator>
 
-  <navigator url="scan-code/index" class="navigator">
+  <!-- <navigator url="../ocr/index" class="navigator">
     <view class="navigator-text">车牌识别</view>
     <view class="navigator-arrow"></view>
-  </navigator>
+  </navigator> -->
+  
+   <navigator url="../demo/demo" class="navigator">
+    <view class="navigator-text">示例</view>
+    <view class="navigator-arrow"></view>
+  </navigator> 
 </view>

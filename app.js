@@ -6,7 +6,7 @@ App({
     heweatherKey: 'f10b214698504bc488893244fa1e6083',//和风天气key  api：http://www.heweather.com/documents/api/s6/weather
   },
   onLaunch: function () {
-    console.log('App Launch')
+   // console.log('App Launch')
   },
   onShow: function () {
     //console.log('App Show')

@@ -1,0 +1,2 @@
+<!--page/demo.wxml-->
+<web-view src="https://bing.com"></web-view>

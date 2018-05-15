@@ -1,0 +1,20 @@
+<view class="page-body">
+  <form>
+    <view class="weui-uploader__files">
+      <view class="weui-uploader__file">
+        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+      </view>
+    </view>
+    <view class="weui-uploader__input-box">
+      <view class="weui-uploader__input" bindtap="chooseImage"></view>
+    </view>
+  </form>
+</view>
+<view class="weui-cells__title">识别结果</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view id="copy_value" class="weui-cell__bd">{{result}}</view>
+    <button bindtap='copy' data-text="{{result}}">复制</button>
+  </view>
+</view>
+<canvas canvas-id="myCanvas"></canvas>
