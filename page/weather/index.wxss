@@ -15,17 +15,21 @@
   display: flex;
   flex-direction: column; /*纵向*/
 }
+
 .street {
   font-size: 1.4em;
 }
-.type{
+
+.type {
   font-size: 1.4em;
   margin-top: 200rpx;
 }
-.show{
+
+.show {
   display: flex;
   flex-direction: row;
 }
+
 .bg {
   height: 100vh;
   width: 100%;
@@ -74,7 +78,8 @@
 .forecast {
   color: #345067;
   /*background: #aaa;*/
-  margin-top: 170rpx;
-  font-size:1.2em;
+  font-size: 1.2em;
+  bottom: 0;
+  position: fixed;
+  width: 92%;
 }
-

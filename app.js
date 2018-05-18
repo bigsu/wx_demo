@@ -10,6 +10,9 @@ App({
   },
   onShow: function () {
     //console.log('App Show')
+    wx.switchTab({
+      url: 'page/weather/index'
+    })
   },
   onHide: function () {
     //console.log('App Hide')

@@ -1,69 +1,71 @@
 <!--index.wxml-->
-<image class="bg" mode="aspectFill" src="image/bg4.jpg"></image>
-<view class="wrapper">
-  <view class="curWeather">
-    <view class="curTemperature">
-      <!-- <view class="city">{{address.regeocodeData.addressComponent.city}}</view>   -->
-      <view class="street">{{address.name}}</view>
-      <view class="show">
-        <view class="tmp">{{now.tmp}}°</view>
-        <view class="type">{{now.cond_txt}}
+<view>
+  <image class="bg" mode="aspectFill" src="{{imageUrl}}"></image>
+
+  <view class="wrapper">
+    <view class="curWeather">
+      <view class="curTemperature">
+        <!-- <view class="city">{{address.regeocodeData.addressComponent.city}}</view>   -->
+        <view class="street">{{address.name}}</view>
+        <view class="show">
+          <view class="tmp">{{now.tmp}}°</view>
+          <view class="type">{{now.cond_txt}}
+          </view>
+        </view>
+        <view class='update'>{{update}}</view>
+      </view>
+      <view class="curExtern">
+        <view class="wind">
+          <view class="">{{now.wind_dir}}</view>
+          <view class="val">{{now.wind_sc}}级</view>
+        </view>
+        <view class="line"></view>
+        <view class="relWet">
+          <view class="">相对湿度</view>
+          <view class="val">{{now.hum}}</view>
+        </view>
+        <view class="line"></view>
+        <view class="humanTmp">
+          <view class="">体感温度</view>
+          <view class="val">{{now.fl}}°</view>
         </view>
       </view>
-      <view class='update'>{{update}}</view>
     </view>
-    <view class="curExtern">
-      <view class="wind">
-        <view class="">{{now.wind_dir}}</view>
-        <view class="val">{{now.wind_sc}}级</view>
+    <view class="forecast">
+      <view class="castItem">
+        <view class="castDay">今天</view>
+        <view class="castType">
+          <image class="typeImg" src="{{today_icon}}"></image>
+          {{today.cond_txt_d}}
+        </view>
+        <view class="castTmp">
+          {{today.tmp_min}}° / {{today.tmp_max}}°
+        </view>
       </view>
-      <view class="line"></view>
-      <view class="relWet">
-        <view class="">相对湿度</view>
-        <view class="val">{{now.hum}}</view>
-      </view>
-      <view class="line"></view>
-      <view class="humanTmp">
-        <view class="">体感温度</view>
-        <view class="val">{{now.fl}}°</view>
-      </view>
-    </view>
-  </view>
-  <view class="forecast">
-    <view class="castItem">
-      <view class="castDay">今天</view>
-      <view class="castType">
-        <image class="typeImg" src="{{today_icon}}"></image>
-        {{today.cond_txt_d}}
-      </view>
-      <view class="castTmp">
-        {{today.tmp_min}}° / {{today.tmp_max}}°
-      </view>
-    </view>
 
-    <view class="castItem">
-      <view class="castDay">明天</view>
-      <view class="castType">
-        <image class="typeImg" src="{{tomorrow_icon}}"></image>
-        {{tomorrow.cond_txt_d}}
+      <view class="castItem">
+        <view class="castDay">明天</view>
+        <view class="castType">
+          <image class="typeImg" src="{{tomorrow_icon}}"></image>
+          {{tomorrow.cond_txt_d}}
+        </view>
+        <view class="castTmp">
+          {{tomorrow.tmp_min}}° / {{tomorrow.tmp_max}}°
+        </view>
       </view>
-      <view class="castTmp">
-        {{tomorrow.tmp_min}}° / {{tomorrow.tmp_max}}°
-      </view>
-    </view>
 
-    <view class="castItem">
-      <view class="castDay">后天</view>
-      <view class="castType">
-        <image class="typeImg" src="{{aftertomorrow_icon}}"></image>
-        {{aftertomorrow.cond_txt_d}}
+      <view class="castItem">
+        <view class="castDay">后天</view>
+        <view class="castType">
+          <image class="typeImg" src="{{aftertomorrow_icon}}"></image>
+          {{aftertomorrow.cond_txt_d}}
+        </view>
+        <view class="castTmp">
+          {{aftertomorrow.tmp_min}}° / {{aftertomorrow.tmp_max}}°
+        </view>
       </view>
-      <view class="castTmp">
-        {{aftertomorrow.tmp_min}}° / {{aftertomorrow.tmp_max}}°
-      </view>
-    </view>
 
-    <!-- <block wx:for="{{forecast}}" wx:for-item="fc" wx:key="">  
+      <!-- <block wx:for="{{forecast}}" wx:for-item="fc" wx:key="">  
       <view class="castItem">  
         <view class="castDay">{{fc.date}}</view>  
         <view class="castType">  
@@ -76,5 +78,6 @@
       </view>  
     </block>   -->
 
+    </view>
   </view>
 </view>

@@ -5,7 +5,10 @@
     "page/calendar/index",
     "page/scan-code/index",
     "page/ocr/index",
+    "page/qiniu/index",
     "page/demo/demo"
+
+
   ],
   "window": {
     "navigationBarTextStyle": "black",

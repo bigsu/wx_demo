@@ -1,4 +1,5 @@
 var amapFile = require('amap-wx.js');
+
 Page({
   data: {
     address: {},
@@ -10,7 +11,7 @@ Page({
     today_icon: '',
     tomorrow_icon: '',
     aftertomorrow: '',
-    update: ''
+    imageUrl: 'image/bg.jpg'
   },
   onShow: function () {
     var that = this;
@@ -80,6 +81,6 @@ Page({
         'update': ''
       });
     }, 3000);
-  }
+  },
 
 })
