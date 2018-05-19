@@ -1,0 +1,13 @@
+<view>
+  <view wx:if="{{hasUserInfo === true}}">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view wx:else>
+    <image class="userinfo-avatar" src="../../../image/nologin.png"></image>
+  </view>
+</view>
+<view class="btn-area">
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">获取用户信息</button>
+  <button bindtap="clear">清空</button>
+</view>

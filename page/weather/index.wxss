@@ -1,5 +1,7 @@
 /**index.wxss**/
-
+page{
+  background-color: #F6F6F8;
+}
 .wrapper {
   width: 100%;
   height: 100vh;

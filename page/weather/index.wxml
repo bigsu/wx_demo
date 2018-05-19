@@ -22,7 +22,7 @@
         <view class="line"></view>
         <view class="relWet">
           <view class="">相对湿度</view>
-          <view class="val">{{now.hum}}</view>
+          <view class="val">{{now.hum}}%</view>
         </view>
         <view class="line"></view>
         <view class="humanTmp">

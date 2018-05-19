@@ -6,9 +6,8 @@
     "page/scan-code/index",
     "page/ocr/index",
     "page/qiniu/index",
-    "page/demo/demo"
-
-
+    "page/demo/demo",
+    "page/user/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -20,7 +19,7 @@
     "color": "#7A7E83",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "page/weather/index",
@@ -36,9 +35,15 @@
       },
       {
         "pagePath": "page/navigate/index",
-        "iconPath": "image/icon_component.png",
-        "selectedIconPath": "image/icon_component_HL.png",
+        "iconPath": "image/bar_e1.png",
+        "selectedIconPath": "image/bar_e2.png",
         "text": "小工具"
+      },
+      {
+        "pagePath": "page/user/index",
+        "iconPath": "image/bar_d1.png",
+        "selectedIconPath": "image/bar_d2.png",
+        "text": "我的"
       }
     ]
   },
