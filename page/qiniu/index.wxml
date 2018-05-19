@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="main">
+    <view class='upButton'>
+      <button type="primary" bindtap="didPressChooesImage">上传图片</button>
+    </view>
+  <view class="image-container">
+    <image class="image" src="{{imageObject.imageURL}}" mode="aspectFit" bindtap="previewImage"></image>
+  </view>
+  
+  <view class="{{imageObject.key!=null&&imageObject.key!=''?'data':'dataEmpty'}}">
+    <text>hash: {{imageObject.hash}}\n\n</text>
+    <text>key: {{imageObject.key}}\n\n</text>
+     <text>图片外链：{{imageObject.imageURL}}</text>
+     <button bindtap='copy' data-text="{{imageObject.imageURL}}">复制外链</button>
+  </view>
+</view>

@@ -1,5 +1,5 @@
 
-var ccFile = require('../../util/calendar-converter.js')
+var ccFile = require('calendar-converter.js')
 var calendarConverter = new ccFile.CalendarConverter();
 
 //月份天数表

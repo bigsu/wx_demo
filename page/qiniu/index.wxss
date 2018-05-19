@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+text {
+  word-break: break-all; 
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+}
+.upButton{
+  top: 0 ;
+  position: fixed;
+}
+.image-container {
+  margin-top: 50rpx;
+  background-color: #f2f2f2
+}
+
+.data {
+  display: block;
+  margin: 5px;
+}
+.dataEmpty{
+  display: none;
+}
