@@ -1,14 +1,57 @@
 /* page/user/index.wxss */
+@import "../common/index.wxss";
+
 .page-body-info {
   padding-bottom: 0;
   height: 230px;
 }
+
 .userinfo-avatar {
-  border-radius: 128rpx;
-  width: 128rpx;
-  height: 128rpx;
+  border-radius: 100rpx;
+  width: 160rpx;
+  height: 160rpx;
+  background-image: url(http://p8k57dlbo.bkt.clouddn.com/wx_user_default.png);
+  /* background-image: "../../image/nologin.png"; */
+  background-size: 160rpx;
+  background-repeat: no-repeat;
+  border: none;
 }
-.userinfo-nickname {
-  margin-top: 20rpx;
+
+nickname {
   font-size: 38rpx;
+}
+
+.head {
+  height: 40%;
+  background-color: #3f7ff2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user {
+  margin-top: 100rpx;
+}
+
+.navigator {
+  background-color: #fff;
+  border-bottom: 1rpx solid #d8d8d8;
+  margin-top:30rpx;
+}
+.settingImage{
+  width: 55rpx;
+  height: 55rpx;
+  padding:10rpx;
+}
+.bottom {
+  /* margin-top:50rpx; */
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+.btn{
+  width: 102%;
+  height:90rpx;
+  background-color: #fff;
+  margin-left:-10rpx;
 }

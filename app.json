@@ -7,7 +7,8 @@
     "page/ocr/index",
     "page/qiniu/index",
     "page/demo/demo",
-    "page/user/index"
+    "page/user/index",
+    "page/user/setting/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
