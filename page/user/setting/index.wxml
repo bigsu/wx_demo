@@ -1,2 +1,45 @@
 <!--page/user/setting/index.wxml-->
-<text>page/user/setting/index.wxml</text>
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="page-section">
+        <view class="weui-cells__title">高德地图key</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="amap_key" value='{{amap_key}}' />
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">和风天气key</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="heweather_key" value="{{heweather_key}}" />
+          </view>
+        </view>
+
+      </view>
+      <view class="page-section">
+        <view class="weui-cells__title">七牛云融合CDN加速域名</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="qiniu_domain" value="{{qiniu_domain}}" />
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">七牛云上传凭证uptoken</view>
+        <view class="textarea-wrp">
+          <textarea auto-height name="qiniu_uptoken" value="{{qiniu_uptoken}}" />
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">保存</button>
+        <button formType="reset">清空</button>
+      </view>
+    </form>
+  </view>
+</view>

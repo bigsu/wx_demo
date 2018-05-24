@@ -4,8 +4,8 @@ Page({
     hasUserInfo: false
   },
   onShow:function(){
-    console.log(app.globalData.userInfo);
-      console.log(app.globalData.hasLogin);
+    // console.log(app.globalData.userInfo);
+    //   console.log(app.globalData.hasLogin);
 
   },
   bindGetUserInfo: function (e) {

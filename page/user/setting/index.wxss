@@ -1,1 +1,13 @@
 /* page/user/setting/index.wxss */
+@import "../../common/lib/weui.wxss";
+.page-section{
+  margin-bottom: 20rpx;
+}
+textarea {
+    width: 700rpx;
+    padding: 25rpx 0;
+}
+.textarea-wrp {
+    padding: 0 25rpx;
+    background-color: #fff;
+}
