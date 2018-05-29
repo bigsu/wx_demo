@@ -40,5 +40,13 @@ Page({
       current: 'http://p8k57dlbo.bkt.clouddn.com/wx_barcode.png', // 当前显示图片的http链接
       urls: ['http://p8k57dlbo.bkt.clouddn.com/wx_barcode.png'] // 需要预览的图片http链接列表
     })
+  },
+  about: function (e) {
+    wx.showModal({
+      title: "关于作者",
+      content: "本程序已在github开源(github.com/bigsu/wx_demo),如有问题请Issues或留言(workszj@126.com)",
+      showCancel: false,
+      confirmText: "确定"
+    })
   }
 })

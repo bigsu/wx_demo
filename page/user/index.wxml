@@ -20,6 +20,7 @@
   </navigator> -->
   <view class="bottom">
     <button class='btn' bindtap='getBarcode'>小程序码</button>
+    <button class='btn' bindtap="about">关于</button>
     <button class='btn' bindtap="clear">清除缓存</button>
   </view>
 </view>
