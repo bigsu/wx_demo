@@ -2,12 +2,10 @@ const openIdUrl = require('./config').openIdUrl
 
 App({
   data: {
-    amapKey: '0e2dedd5b2f58f482f29f950a25b34b3',//高德key  api：http://lbs.amap.com/api/wx/guide/get-data/regeo
-    heweatherKey: 'f10b214698504bc488893244fa1e6083',//和风天气key  api：http://www.heweather.com/documents/api/s6/weather
-    qiniu_domain: 'https://qiniu.ifelse.top/',//七牛图片外链域名
-    //uptoken生成地址：http://pchou.qiniudn.com/qiniutool/uptoken.html deadline的时间设置长一些
-    qiniu_uptoken: 'KVi-GMKgWZgHohIG9gHPTJdF4sctxfr6R4_ppssS:p3OoXwOk2x_GQcCvKI7V32GSVXs=:eyJzY29wZSI6InN1LWltYWdlcyIsImRlYWRsaW5lIjo0MDcwODgzNjYxfQ=='
-
+    amap_key: '请自己配置',//高德key
+    heweather_key: '请自己配置',//和风天气key
+    qiniu_domain: '请自己配置',//七牛图片外链域名
+    qiniu_uptoken: '请自己配置'//七牛上传凭证
   },
   onShow: function () {
     //console.log('App Show')
