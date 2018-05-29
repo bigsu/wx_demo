@@ -13,6 +13,7 @@
 ## 相关资料
 #### 天气：
 - 帖子：https://blog.csdn.net/Inite/article/details/74906945<br/>
+ 	修改样式，加入刷新功能，使用和风天气接口
 - 高德<br/>
 　　定位接口：http://lbs.amap.com/api/wx/guide/get-data/regeo<br/>
 　　控制台：http://lbs.amap.com/dev/key/app<br/>
@@ -21,8 +22,9 @@
 　　控制台：https://console.heweather.com/my/service<br/>
 
 #### 日历：
-- 帖子：https://github.com/treadpit/wx_calendar<br/>
-	https://github.com/getweapp/weapp-calender<br/>
+- 帖子：http://www.getweapp.com/project?projectId=5892a2dc52e1e8733dc567ea<br/>
+	调整样式，加入选中效果
+	
 	
 #### 七牛云：
 - sdk：https://github.com/gpake/qiniu-wxapp-sdk
