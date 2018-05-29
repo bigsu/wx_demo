@@ -13,11 +13,11 @@
 </view>
 
 <view class="area">
-  <navigator url="setting/index" class="navigator">
+  <!-- <navigator url="setting/index" class="navigator">
   <image src='setting.png' class="settingImage"></image>
     <view class="navigator-text">通用设置</view>
     <view class="navigator-arrow"></view>
-  </navigator>
+  </navigator> -->
   <view class="bottom">
     <button class='btn' bindtap='getBarcode'>小程序码</button>
     <button class='btn' bindtap="clear">清除缓存</button>
