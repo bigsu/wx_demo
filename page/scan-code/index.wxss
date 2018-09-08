@@ -1,6 +1,21 @@
 @import "../common/lib/weui.wxss";
 
-.weui-cell__bd{
+.weui-cell__bd {
   min-height: 48rpx;
   word-break: break-all;
+}
+
+.weui-cell_input {
+  width: 100%;
+  margin-bottom: 60rpx;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 48rpx;
+  word-break: break-all;
+}
+.weui-input{
+  min-height: 100rpx;
+  margin-top: 100rpx;
+  background-color: white;
 }

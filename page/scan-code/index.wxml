@@ -13,7 +13,14 @@
         <button bindtap='copy' data-text="{{result}}">复制</button>
       </view>
     </view>
+<!--https://github.com/yingye/weapp-qrcode-->
+    <view class="weui-cell_input">
+      <input class="weui-input" bindinput="bindKeyInput" placeholder="    输入文本信息" />
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap='getcode' data-code='{{inputValue}}'>生成二维码</button>
+    </view>
+    <canvas style="margin-left:80px;width: 200px; height: 200px;" canvas-id="myQrcode"></canvas>
+    <!-- <template is="foot" /> -->
   </view>
-
-  <!-- <template is="foot" /> -->
 </view>
