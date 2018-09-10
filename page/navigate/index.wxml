@@ -1,6 +1,6 @@
 <view class="index">
   <navigator url="../scan-code/index" class="navigator">
-    <view class="navigator-text">扫码</view>
+    <view class="navigator-text">二维码</view>
     <view class="navigator-arrow"></view>
   </navigator>
 

@@ -20,7 +20,7 @@
     <view class="btn-area">
       <button type="primary" bindtap='getcode' data-code='{{inputValue}}'>生成二维码</button>
     </view>
-    <canvas style="margin-left:80px;width: 200px; height: 200px;" canvas-id="myQrcode"></canvas>
+    <canvas style="margin-left:80px;width: 200px; height: 200px;" canvas-id="myQrcode" bindtap="previewImage"></canvas>
     <!-- <template is="foot" /> -->
   </view>
 </view>
