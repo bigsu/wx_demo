@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='pay-channel'>
+    <view wx:if="{{alipayRight == '0'}}" class='alipay-default btn' bindtap='bindAlipay'>+</view>
+    <view wx:if="{{alipayRight == '1'}}" hidden='{{ alipayRight != "1" }}' class='alipay-right btn' bindtap='bindAlipay'></view>
+    <view wx:if="{{alipayRight == '2'}}" hidden='{{ alipayRight != "2" }}' class='alipay-wrong btn' bindtap='bindAlipay'></view>
+
+    <view wx:if="{{wechatRight == '0'}}" class='wechat-default btn' bindtap='bindWechat'>+</view>
+    <view wx:if="{{wechatRight == '1'}}" class='wechat-right btn' bindtap='bindWechat'></view>
+    <view wx:if="{{wechatRight == '2'}}" class='wechat-wrong btn' bindtap='bindWechat'></view>
+  </view>
+  <!-- 类型  -->
+  <view class='pay-container'>
+    <view class='pay-title'>支付宝</view>
+      <image src='../img/0.gif' style='width: 50px; height: 50px;'></image>
+    <view class='pay-title'>微信</view>
+  </view>
+  <!-- logo -->
+  <view wx:if="{{logoRight == '0'}}" class='logo-default' bindtap='bindLogo'>logo</view>
+    <view wx:if="{{logoRight == '1'}}" class='logo-right' bindtap='bindLogo'>logo</view>
+  <!-- 合并 -->
+  <view>
+    <view class='submit-button btn' bindtap='bindSubmit'>立即合并</view>
+    <view class='footer'>
+      <view class='about' bindtap='bindGuide'>使用手册</view>
+      <view class='about' bindtap='bindAbout'>产品介绍</view> 
+    </view>
+    
+  </view>
+</view>

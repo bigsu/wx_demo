@@ -1,0 +1,83 @@
+<!--about.wxml-->
+<view>
+  <view class='header-section'>
+    <image src='../img/banner.png' style='width: 100%; height: 230px;'>
+    </image>
+    <view class='header-intro'>
+      钱直接打到个体账户，无手续费
+    </view>
+  </view>
+
+  <!-- 简介 -->
+  <view>
+    <view class='mid-section'>
+      <image src='../img/u1116.png' style='width: 50px; height: 50px;'></image>
+      <view class='mid-section-title'>合并微信支付宝收款码</view>
+      <view class='mid-section-content'>通过合并后的二维码可以自动识别用户扫码方式，微信扫码则使用微信支付，支付宝扫码则使用支付宝支付，商家无需打印2个二维码，节省成本与空间。</view>
+    </view>
+    <view class='mid-section'>
+      <image src='../img/u1121.png' style='width: 50px; height: 50px;'></image>
+      <view class='mid-section-title'>安全，有保障</view>
+      <view class='mid-section-content'>全新扫码转账技术，钱直接转到商家个体账户，芝麻收款不参与中间转账过程，完全免费提供技术支持，保证商家利益。</view>
+    </view>
+    <view class='mid-section'>
+      <image src='../img/u1126.png' style='width: 50px; height: 50px;'></image>
+      <view class='mid-section-title'>钱直接付款到个体账号，无手续费</view>
+      <view class='mid-section-content'>用户通过扫描合并后的二维码转账，直接转到商户个体账户里，省去千分之6的手续费。</view>
+    </view>
+    <view class='mid-section'>
+      <image src='../img/u1131.png' style='width: 50px; height: 50px;'></image>
+      <view class='mid-section-title'>方便快捷</view>
+      <view class='mid-section-content'>一码收款，对于用户，无需关注扫码支付方式，直接扫码付款即可。不用担心不能微信支付或者支付宝支付</view>
+    </view>
+  </view>
+
+  <!-- 常见问题 -->
+  <view class='footer-section'>
+    <view class='question-title'>常见问题</view>
+    <view>
+      <view class='question'>1.合并后的收款码有扫码次数和时间限制吗？</view>
+      <view class='answer'>无限制扫码次数；永久可用。</view>
+    </view>
+    <view>
+      <view class='question'>2.合并后的二维码安全吗？</view>
+      <view class='answer'>安全。技术上，我们只是对两种类型的收款码进行合并，让用户收款使用更方便</view>
+    </view>
+    <view>
+      <view class='question'>3.别人扫码付款后，钱打到哪里去了？</view>
+      <view class='answer'>打到您的个人账户。具体来说：微信扫码付款时，钱打到您的微信钱包里；支付宝扫码付款时，钱打到您的支付宝账户里</view>
+    </view>
+    <view>
+      <view class='question'>4.为什么微信扫码后还需要长按识别？</view>
+      <view class='answer'>微信接口未开放权限，无法直接调起微信转账页面，所以需要长按识二维码别进行转账。（给您带来不便还请谅解）目前支付宝接口已开放权限。可以直接扫码付款。</view>
+    </view>
+    <view>
+      <view class='question'>5.使用此功能时，支付宝、微信会向我收取费用吗？</view>
+      <view class='answer'>不会。此功能是对二维码进行合并，不涉及微信、支付宝的收费问题。</view>
+    </view>
+    <view>
+      <view class='question'>6.在网站上传收款码会泄露用户隐私资料吗？</view>
+      <view class='answer'>不会。收款码是个人的收款二维码，是客户向对方转账的一种方式，和商家平时向客户展示的收款码是一样的。</view>
+    </view>
+    <view>
+      <view class='question'>7.合并后的二维码能通过微信或者支付宝扫码转账码？</view>
+      <view class='answer'>可以。通过合并后的二维码可以自动识别用户扫码方式，微信扫码则使用微信支付，支付宝扫码则使用支付宝支付</view>
+    </view>
+    <view>
+      <view class='question'>8.合并二维码对于商家有什么好处？</view>
+      <view class='answer-more'>
+        <view>①对于商家来说可免中间手续费，收款直接转入到商家个体账户，不需经过第三方公司提现。</view>
+        <view>②一码在手，随扫随有：只保留一个扫码牌就可以了。</view>
+        <view>③此功能免费使用 </view>
+      </view>
+    </view>
+    
+  </view>
+  <view class='footer-site'>
+    <view class='visite-site'>
+      https://heyfox.herokuapp.com
+    </view>
+     <view class='visite-more'>网页版地址</view> 
+  </view>
+  
+</view>

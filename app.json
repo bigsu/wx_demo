@@ -8,7 +8,11 @@
     "page/qiniu/index",
     "page/demo/demo",
     "page/user/index",
-    "page/user/setting/index"
+    "page/user/setting/index",
+    "page/pay/pay/pay",
+    "page/pay/qrcode/qrcode",
+    "page/pay/about/about",
+    "page/pay/guide/guide"
   ],
   "window": {
     "navigationBarTextStyle": "black",

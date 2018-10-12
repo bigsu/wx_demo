@@ -4,6 +4,11 @@
     <view class="navigator-arrow"></view>
   </navigator>
 
+  <navigator url="../pay/pay/pay" class="navigator">
+    <view class="navigator-text">收款码合并</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+
   <navigator url="../qiniu/index" class="navigator">
     <view class="navigator-text">七牛云图片上传</view>
     <view class="navigator-arrow"></view>

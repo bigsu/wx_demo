@@ -1,0 +1,136 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  /* background-color: "#e5e5e5"; */
+} 
+
+.paytype-button {
+  background-color: #F9F9F9;
+}
+
+.pay-channel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border-color: red;
+  border-width: 1px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.alipay-default {
+  background-color: #F9F9F9;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: xx-large;
+}
+.alipay-right {
+  background-color: #118CE2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.alipay-wrong {
+  background-color: #EE6363;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.wechat-default {
+  background-color: #F9F9F9;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: xx-large;
+}
+.wechat-right {
+  background-color: #229F2B;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.wechat-wrong {
+  background-color: #EE6363;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.logo-default {
+  background-color: #F9F9F9;
+  width: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  border-radius: 18px;
+  color: green;
+}
+
+.logo-right {
+  background-color: #9ACD32;
+  width: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  border-radius: 18px;
+  color: white;
+}
+
+.submit-button {
+  margin-top: 30px;
+  width: 160px;
+   height: 80px; 
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.pay-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.pay-title {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: fixed; 
+  bottom: 50rpx;   
+  right: 20rpx;
+  left: 20px;     
+  height: 40rpx;  
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+}
+.about {  
+  color: green;  
+  bottom: 20rpx;   
+  right: 30rpx;
+  left: 30px;     
+  height: 40rpx;  
+  text-align: center;
+  font-size: x-small;
+  padding: 25px;
+}
