@@ -1,5 +1,5 @@
 // qrcode.js
-var QR = require('../../../util/qrcode.js')
+var QR = require('../util/qrcode.js')
 
 Page({
 
@@ -7,10 +7,11 @@ Page({
     content: "",
     logo: '',
     alipay: '',
-    wechat: ''
+    wechat: '',
+    payImg: '../logo/pay.png'
   },
 
-  onLoad: function (options) {
+  onLoad: function(options) {
     wx.showShareMenu({
       withShareTicket: true
     })
@@ -29,34 +30,41 @@ Page({
     console.log('-======---')
 
     // 绘图
-    const ctx = wx.createCanvasContext('mycanvas')
-    QR.qrApi.draw(this.data.content, ctx, 300, 300)
     if (options['logo'] != '' & options['logo'] != null) {
+      /**
+       * 绘制带logo二维码
+       * @param url        二维码字符串 如 https://github.com/xlsn0w
+       * @param canvas-id  画布ID 如 logoQRCode
+       * @param width      二维码宽度 如 275
+       * @param height     二维码高度 如 275
+       * @param logo       二维码logo 如 /images/xlsn0w.png
+       */
+
       console.log("绘制logo")
-      ctx.clearRect(129, 129, 42, 42)
-      ctx.drawImage(options['logo'], 130, 130, 40, 40)
+      QR.qrApi.draw(this.data.content, 'mycanvas', 300, 300, null, options['logo']);
+    } else {
+      console.log("绘制二维码")
+      QR.qrApi.draw(this.data.content, 'mycanvas', 300, 300,null,null);
     }
-    ctx.draw()
   },
 
   // 分享
-  onShareAppMessage: function (res) {
+  onShareAppMessage: function(res) {
     if (res.from === 'menu') {
       // 右上角转发菜单
       console.log(res.target)
     }
     return {
       title: '合并收款码',
-      path: 'pages/qrcode/qrcode?alipay=' + this.data.alipay + "&wechat=" + this.data.wechat,
-      success: function (res) {
+      path: 'page/pay/qrcode/qrcode?alipay=' + this.data.alipay + "&wechat=" + this.data.wechat,
+      success: function(res) {
         // 转发成功
         console.log('转发成功')
-        console.log('pages/qrcode/qrcode?alipay=' + this.data.alipay + "&wechat=" + this.data.wechat)
         wx.showToast({
           title: '转发成功',
         })
       },
-      fail: function (res) {
+      fail: function(res) {
         // 转发失败
         console.log('转发失败')
         wx.showToast({
@@ -66,20 +74,21 @@ Page({
     }
   },
 
-  previewImg: function (e) {
+  previewImg: function(e) {
     wx.showActionSheet({
       itemList: ['保存收款码'],
-      success: function (res) {
+      success: function(res) {
         console.log(res.tapIndex)
         if (res.tapIndex == 0) {
           console.log('保存收款码')
           wx.canvasToTempFilePath({
+            fileType: 'jpg',
             canvasId: 'mycanvas',
-            success: function (res) {
+            success: function(res) {
               var tempFilePath = encodeURI(res.tempFilePath)
               console.log(res)
               wx.saveImageToPhotosAlbum({
-                filePath: res.tempFilePath,
+                filePath: res.tempFilePath, 
                 success: function success(res) {
                   console.log('saved::' + res.savedFilePath);
                   wx.showToast({
@@ -88,20 +97,20 @@ Page({
                 }
               })
             },
-            fail: function (res) {
+            fail: function(res) {
               console.log(res);
               wx.showToast({
-                title: '保存失败',
-                icon: 'loading'
-              }),
-                setTimeout(function () {
+                  title: '保存失败',
+                  icon: 'loading'
+                }),
+                setTimeout(function() {
                   wx.hideLoading()
                 }, 2000)
             }
           });
         }
       },
-      fail: function (res) {
+      fail: function(res) {
         console.log(res.errMsg)
       }
     })

@@ -3,12 +3,12 @@
 <view class="qrcode-box">
   <view class="qrcode-container">
     <view class="qrcode-top">
-      <text>收款码</text>
+      <text>扫码付款</text>
     </view>
     <canvas bindtap="previewImg" canvas-id="mycanvas" class="qrcode"/>
     <canvas canvas-id='mylogo' wx:if="{{ logo != ''}}" class='qrlogo'></canvas>
     <view class="qrcode-bottom">
-      <view>支持微信、支付宝</view>
+      <view> <image class="payImg" src="{{payImg}}"></image></view>
     </view>
   </view> 
 </view>

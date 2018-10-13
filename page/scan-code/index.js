@@ -18,7 +18,8 @@ Page({
       // typeNumber: 10,
       text: e.target.dataset.code
     })
-    wx.canvasToTempFilePath({　　　　
+    wx.canvasToTempFilePath({
+      fileType: 'jpg',　　　
       canvasId: 'myQrcode', //通过id 指定是哪个canvas
       success(res) {　
         //成功之后保存到本地

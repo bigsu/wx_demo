@@ -11,7 +11,7 @@
 } 
 
 .paytype-button {
-  background-color: #F9F9F9;
+  background-color: #F0FFF0;
 }
 
 .pay-channel {
@@ -30,7 +30,7 @@
 }
 
 .alipay-default {
-  background-color: #F9F9F9;
+  background-color: #F0FFF0;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@
 }
 
 .wechat-default {
-  background-color: #F9F9F9;
+  background-color: #F0FFF0;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@
 }
 
 .logo-default {
-  background-color: #F9F9F9;
+  background-color: #F0FFF0;
   width: 100px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -95,7 +95,7 @@
   margin-top: 30px;
   width: 160px;
    height: 80px; 
-  background-color: #F9F9F9;
+  background-color: #FAEBD7;
   display: flex;
   justify-content: center;
   align-items: center;
