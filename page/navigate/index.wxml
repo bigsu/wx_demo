@@ -13,6 +13,7 @@
     <view class="navigator-text">七牛云图片上传</view>
     <view class="navigator-arrow"></view>
   </navigator>
+  
 
   <!-- <navigator url="../ocr/index" class="navigator">
     <view class="navigator-text">车牌识别</view>
