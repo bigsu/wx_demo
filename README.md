@@ -53,5 +53,5 @@
 [3]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_3.jpg
 [4]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_4.jpg
 [5]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_5.jpg
-[5]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_6.jpg
-[5]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_7.jpg
+[6]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_6.jpg
+[7]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_7.jpg
