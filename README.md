@@ -2,7 +2,7 @@
 微信小程序（天气、日历，扫码、七牛云图片上传）
 ***使用前请先修改app.js的相关配置***
 > 演示视频：
-[http://p8k57dlbo.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%BC%94%E7%A4%BA.mp4](http://p8k57dlbo.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%BC%94%E7%A4%BA.mp4 "小程序演示")
+[http://sufiles.ifelse.top/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%BC%94%E7%A4%BA.mp4](http://sufiles.ifelse.top/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%BC%94%E7%A4%BA.mp4 "小程序演示")
 
 
 ## 相关资料
@@ -43,10 +43,10 @@
 ***
 ![此处输入图片的描述][7]
 
-[1]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_1.jpg
-[2]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_2.jpg
-[3]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_3.jpg
-[4]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_4.jpg
-[5]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_5.jpg
-[6]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_6.jpg
-[7]: http://p8k57dlbo.bkt.clouddn.com/wx_preview_7.jpg
+[1]: http://sufiles.ifelse.top/wx_preview_1.jpg
+[2]: http://sufiles.ifelse.top/wx_preview_2.jpg
+[3]: http://sufiles.ifelse.top/wx_preview_3.jpg
+[4]: http://sufiles.ifelse.top/wx_preview_4.jpg
+[5]: http://sufiles.ifelse.top/wx_preview_5.jpg
+[6]: http://sufiles.ifelse.top/wx_preview_6.jpg
+[7]: http://sufiles.ifelse.top/wx_preview_7.jpg
